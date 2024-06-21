@@ -1,0 +1,61 @@
+
+
+The Stream API in Java, introduced in Java 8, is a powerful feature that allows developers to process sequences of elements (like collections) in a functional style. It provides a high-level way to perform operations such as filtering, mapping, and reducing data.
+
+
+
+1.These streams are related to Collection Framework/(Group of objects).These streams are very different from io stream,io streams are 
+sequence of data.
+
+Collection Framework:- list,Set,map,Queue,Deque,stack.
+Group of objects:- Array 
+
+This given below  is also a group of object.
+
+<!-- List<Person> people = Arrays.asList(
+            new Person("Alice", 30),
+            new Person("Bob", 25),
+            new Person("Charlie", 30),
+            new Person("David", 25)
+        );
+        class Person
+        {
+          private String name;
+          private int age;
+
+           public Person(String name, int age)
+           {
+            this.name = name;
+             this.age = age;
+            }
+        }
+} -->
+
+2.These streams was introduce in java 1.8 version 
+3.Stream Api is basically perform operation and process the objects of collection
+4.Stream reduces the code length
+
+
+
+Key Points:
+Functional Approach: Uses lambda expressions to streamline operations on collections.
+Pipelining: Operations can be chained together to form a pipeline (e.g., filter -> map -> reduce).
+Parallel Processing: Simplifies parallel processing of data, enhancing performance.
+Non-Mutative: Streams do not change the original data structure but produce a new result.
+
+
+
+
+can we add elemnet to streams?
+
+No, you cannot directly add elements to a Stream in Java. Streams are designed to process and manipulate data, not to modify the underlying data source. They are intended to be a read-only view of the data, focusing on operations like filtering, mapping, and reducing.
+
+
+
+Content to study 
+
+1. Introduction to Stream Api. 
+2. Java code without stream vs with Stream Api.
+3. How to create the object of stream and processing data.
+4. filter and map method with example .
+5. Other important metthod and operations such as Collect(),sorted(),min(),max(),forEach(),toArrays() And Stream.of().
